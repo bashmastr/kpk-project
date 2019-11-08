@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <title>HED</title>
+</head>
+<body>
+    <div class="container">
+    <!-- Default form login -->
+    <form class="text-center border border-light p-5" action="./Model/form.php" method="POST">
+    <p class="h4 mb-4">New Request Application Form</p>
+    <input type="text" id="teacher_id" name="teacher_id" class="form-control  mb-4" placeholder="PIN">
+	<button class="btn btn-info btn-block my-4" type="submit" name="Submit">Search</button>
+    <table style="width:100%" border = "0">
+    <tr>
+    	<td width = "50%" padding="10px">
+        <input type="text" id="date" name="date" class="form-control  mb-4" placeholder="Date Picker">
+	<!-- Source -->
+        <div class="input-group mb-4" id="source">
+        <div class="input-group-prepend">
+        <span class="input-group-text">Current District</span>
+                    </div>  
+                    <select class="browser-default custom-select" name="district-source" id="district-source" onchange="addSource()">
+                        <option "value>Peshawar</option>
+			<option "value>Mardan</option>
+			<option "value>Nowshera</option>
+                    </select>
+                    <!-- <source-college></source-college> -->
+                </div>
+
+               
+
+
+                <!-- priority 1 -->
+                <div class="input-group mb-4" id="priority-1">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text">Current College</span>
+                    </div>  
+                    <select class="browser-default custom-select" id="district-1" name="district-1" onchange="priority1()">
+                        <option "value>GDC1</option>
+			<option "value>GDC2</option>
+			<option "value>GDC3</option>
+        
+                    </select>
+                    
+                </div>
+		</br>
+		 <p class="h4 mb-6">Destination District And Colleges</p>
+
+                <!-- priority 2 -->
+                <div class="input-group mb-4" id="priority-2">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text">District 1</span>
+                    </div>  
+                    <select class="browser-default custom-select" id="district-2" name="district-2" onchange="priority2()">
+                        <option "value>Peshawar</option>
+			<option "value>Mardan</option>
+			<option "value>Nowshera</option>
+                    </select>
+                    
+                </div>
+                <!-- priority 3 -->
+                <div class="input-group mb-4" id="priority-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text">College 1 </span>
+                    </div>  
+                    <select class="browser-default custom-select" id="district-3" name="district-3" onchange="priority3()">
+                        <option "value>GDC1</option>
+			<option "value>GDC2</option>
+			<option "value>GDC3</option>
+                        
+                    </select>
+                    
+                </div>
+		
+		 <div class="input-group mb-4" id="priority-2">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text">District 2</span>
+                    </div>  
+                    <select class="browser-default custom-select" id="district-2" name="district-2" onchange="priority2()">
+                        <option "value>Peshawar</option>
+			<option "value>Mardan</option>
+			<option "value>Nowshera</option>
+                    </select>
+                    
+                </div>
+                <!-- priority 3 -->
+                <div class="input-group mb-4" id="priority-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text">College 2 </span>
+                    </div>  
+                    <select class="browser-default custom-select" id="district-3" name="district-3" onchange="priority3()">
+                        <option "value>GDC1</option>
+			<option "value>GDC2</option>
+			<option "value>GDC3</option>
+                        
+                    </select>
+                    
+                </div>
+
+   		 <div class="input-group mb-4" id="priority-2">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text">District 3</span>
+                    </div>  
+                    <select class="browser-default custom-select" id="district-2" name="district-2" onchange="priority2()">
+                        <option "value>Peshawar</option>
+			<option "value>Mardan</option>
+			<option "value>Nowshera</option>
+                    </select>
+                    
+                </div>
+                <!-- priority 3 -->
+                <div class="input-group mb-4" id="priority-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text">College 3 </span>
+                    </div>  
+                    <select class="browser-default custom-select" id="district-3" name="district-3" onchange="priority3()">
+                        <option "value>GDC1</option>
+			<option "value>GDC2</option>
+			<option "value>GDC3</option>
+                        
+                    </select>
+                    
+                </div>
+		
+		<div class="input-group mb-4" id="priority-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text">Medical</span>
+                    </div>  
+                    <select class="browser-default custom-select" id="district-3" name="district-3" onchange="priority3()">
+                        <option "value>yes</option>
+			<option "value>no</option>
+                        
+                    </select>
+                    
+                </div>
+
+		<div class="input-group mb-4" id="priority-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text">Disability</span>
+                    </div>  
+                    <select class="browser-default custom-select" id="district-3" name="district-3" onchange="priority3()">
+                        <option "value>yes</option>
+			<option "value>no</option>
+                        
+                    </select>
+                    
+                </div>
+		<input type="text" id="teacher_id" name="teacher_id" class="form-control  mb-4" placeholder="Posting District of Spouse">
+                <input type="text" id="teacher_id" name="teacher_id" class="form-control  mb-4" placeholder="Name of Principal">
+                 <!-- Remarks -->
+                <textarea type="text" id="principal_1" name="principal_1" class="form-control  mb-4" placeholder="Remarks"></textarea>
+                <!-- Submit button -->
+                <button class="btn btn-info btn-block my-4" type="submit" name="Submit">Submit</button>
+    </td>
+    <td width = "50%" valign = "top" padding = "10">
+	
+	<input type="text" id="name" name="name" class="form-control  mb-4" placeholder="Name">
+	<input type="text" id="F_name" name="F_name" class="form-control  mb-4" placeholder="Father Name">
+	<input type="text" id="domicile" name="domicile" class="form-control  mb-4" placeholder="Domicile">
+	<input type="text" id="harea" name="harea" class="form-control  mb-4" placeholder="Hard Area">
+	<input type="text" id="tenure" name="tenure" class="form-control  mb-4" placeholder="Tenure">
+	<input type="text" id="seniority" name="seniority" class="form-control  mb-4" placeholder="Seniority">
+	<input type="text" id="Attend" name="Attend" class="form-control  mb-4" placeholder="Attendance Percentage">
+	<input type="text" id="married" name="married" class="form-control  mb-4" placeholder="Marital Status">
+	<input type="text" id="bps" name="bps" class="form-control  mb-4" placeholder="BPS">
+	<input type="text" id="subject" name="subject" class="form-control  mb-4" placeholder="Subject">
+	<input type="text" id="result" name="result" class="form-control  mb-4" placeholder="Result Percentage">
+    </td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

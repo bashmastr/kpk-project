@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <nav>
+      <div>
+        <button class="btn btn-info  " onclick="openForm()">new</button>
+        <button class="btn btn-info " onclick="openForm()">request</button>
+      </div>  
+    </nav>
+    <!-- <title>Hello, world!</title> -->
+  </head>
+  <body>
+    <img src="images\hed.png"   width="200" style="display: block; margin-left: auto; margin-top:30px; margin-right: auto; }"/>
+
+    <div class="container form-popup" id="myForm" >
+        <!-- Default form login -->
+      <form class="text-center border border-light p-5" action="./2.html">
+
+          <p class="h4 mb-4">Application review form</p>
+          <!-- Email -->
+          <input type="text" id="defaultLoginFormEmail" class="form-control  mb-4" placeholder="Teacher id">
+          
+          <!-- Source  -->
+          <div class="input-group  mb-4">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Source College</span>
+            </div>
+            <button class="btn btn-primary dropdown-toggle mr-4" type="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Select Campus</button>
+
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Peshawar</a>
+            <a class="dropdown-item" href="#">Lahore</a>
+            <a class="dropdown-item" href="#">Islamabad</a>
+            
+          </div>
+          </div>
+          
+          <!-- Destination  -->
+          
+          <div class="input-group mb-4">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Destination College</span>
+            </div>
+            <button class="btn btn-primary dropdown-toggle mr-4" type="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Select Campus</button>
+
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Peshawar</a>
+              <a class="dropdown-item" href="#">Lahore</a>
+              <a class="dropdown-item" href="#">Islamabad</a>
+            </div>
+          </div>
+
+           <!-- Remarks -->
+          <input type="text" id="defaultLoginFormRemarks" class="form-control  mb-4" placeholder="Enter remarks by principal">
+
+          <!-- Submit button -->
+          <button class="btn btn-info btn-block my-4" type="submit">Preview Employee</button>
+
+
+      </form>
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

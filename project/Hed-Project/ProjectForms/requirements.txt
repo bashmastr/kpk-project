@@ -1,0 +1,22 @@
+HED eTransfer System
+
+
+FPRequestForm -> No Need to search Directly display the data, Print Option. Request should go to all three principals for time frame of 48 hours.
+
+FPNewApplicationForm -> Print Option.
+
+Director Can Initiate an Application. New Application Form.
+
+Secretary ->  New App Form Request
+
+Class strength.
+
+Number of classes and workload.
+
+Automatic generation of posts.
+
+Seniority, Hard Area, Attendance and Result Percentage -> to be enter by FP in FPNewAppForm
+
+Vacant Post in Dest College = 10, Not = 0
+
+Director Remarks Recommended = 10, No = 0

@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<!-- Include CSS File Here -->
+<link rel="stylesheet" href="css/style.css"/> 
+<script language='JavaScript'>
+function AdditionBy() 
+{ 
+num1 = document.getElementById("first").value; 
+num2 = document.getElementById("second").value; 
+document.getElementById("result").innerHTML = Number(num1) + Number(num2); 
+} 
+ 
+function SubtractionBy()
+{
+num1 = document.getElementById("first").value; 
+num2 = document.getElementById("second").value; 
+document.getElementById("result").innerHTML = Number(num1) - Number(num2); 
+} 
+</script>
+</head>
+<body>
+<div class="container">
+<div class="main">
+<hr>
+<h2> Addition and Subtraction of Two Numbers in JavaScript </h2>
+ <hr>
+<form> 
+Give 1st Number : <input type="text" id="first" maxlength="4"/ size="4"><br> 
+Give 2nd Number : <input type="text" id="second" maxlength="4" size="4" />
+<br><br>
+<input type="button" onClick="AdditionBy()" Value="Addition" 
+title="Click here to find the sum of the two numbers." />  
+<input type="button" onClick="SubtractionBy()" 
+title="Click here to find the differece of the two numbers." 
+Value="Subtraction" /> 
+</form> <br><br>
+<p>The Final Result is : 
+<span id = "result"></span> 
+</p> 
+</div>
+</div>
+</body> 
+</html>
